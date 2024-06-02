@@ -3,4 +3,7 @@ def hello_world():
 
 
 def hello_world_n(N):
-    return "Hello World! " * N
+    greetings = ""
+    for n in range(N):
+        greetings += hello_world() + " "
+    return greetings.rstrip()
